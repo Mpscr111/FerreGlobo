@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oscar Montepeque | Ferretería El Globo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef1f5;
+    color: #172b45;
+    padding: 30px 15px;
+}
+
+.carta {
+    max-width: 950px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 12px 35px #00000012;
+}
+
+/* ENCABEZADO */
+
+.header {
+    background: #142943;
+    padding: 55px 60px 40px;
+    color: white;
+    border-bottom: 5px solid #c9a34e;
+}
+
+.header small {
+    color: #c9a34e;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 46px;
+    margin-top: 22px;
+}
+
+.header h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #cbd5e1;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid #ffffff30;
+}
+
+.contacto div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contacto span {
+    color: #c9a34e;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contacto strong {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* CATALOGOS */
+
+.catalogos {
+    padding: 45px 60px 60px;
+    background: #f7f8fa;
+}
+
+.linea {
+    width: 55px;
+    height: 4px;
+    background: #c9a34e;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.catalogos-intro {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.grid-catalogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.catalogo {
+    background: white;
+    padding: 22px 16px;
+    border: 1px solid #e5e9ef;
+    border-radius: 5px;
+    transition: .25s;
+}
+
+.catalogo:hover {
+    transform: translateY(-4px);
+    border-color: #c9a34e;
+    box-shadow: 0 8px 20px #0000000c;
+}
+
+.catalogo h4 {
+    color: #203e60;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.catalogo a {
+    display: inline-block;
+    color: #a18442;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.catalogo a:hover {
+    color: #142943;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #142943;
+    padding: 23px;
+    color: #cbd5e1;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 650px) {
+    .header {
+        padding: 40px 25px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+    }
+
+    .catalogos {
+        padding: 35px 25px;
+    }
+
+    .grid-catalogos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .contacto {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 370px) {
+    .grid-catalogos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    .carta {
+        box-shadow: none;
+    }
+
+    .catalogo:hover {
+        transform: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="carta">
+
+    <!-- ENCABEZADO -->
+
+    <header class="header">
+
+        <small>FERRETERÍA EL GLOBO</small>
+
+        <h1>Oscar Montepeque</h1>
+
+        <h2>SUPERVISOR</h2>
+
+        <!-- INFORMACION DE CONTACTO -->
+
+        <section class="contacto">
+
+            <div>
+                <span>TELÉFONO</span>
+                <strong>3774 9836</strong>
+            </div>
+
+        </section>
+
+    </header>
+
+    <!-- CATALOGOS DE LA EMPRESA -->
+
+    <section class="catalogos">
+
+        <div class="linea"></div>
+
+        <h3>Catálogos de productos</h3>
+
+        <p class="catalogos-intro">
+            Conoce nuestras marcas y consulta sus catálogos
+            oficiales de productos.
+        </p>
+
+        <div class="grid-catalogos">
+
+            <div class="catalogo">
+                <h4>Victorinox</h4>
+                <a href="https://www.ferreteriaelglobo.com/victorinox/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Wenger</h4>
+                <a href="https://www.ferreteriaelglobo.com/wenger/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>SIGG</h4>
+                <a href="https://www.ferreteriaelglobo.com/sigg/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>NEBO</h4>
+                <a href="https://www.ferreteriaelglobo.com/nebo/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Maglite</h4>
+                <a href="https://www.ferreteriaelglobo.com/maglite-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Zippo</h4>
+                <a href="https://www.ferreteriaelglobo.com/zippo-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Celestron</h4>
+                <a href="https://www.ferreteriaelglobo.com/celestron-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Vonder</h4>
+                <a href="https://www.ferreteriaelglobo.com/vonder-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Stanley</h4>
+                <a href="https://www.ferreteriaelglobo.com/stanley-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Irwin</h4>
+                <a href="https://www.ferreteriaelglobo.com/irwin-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Yale</h4>
+                <a href="https://www.ferreteriaelglobo.com/yale-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Elite</h4>
+                <a href="https://www.ferreteriaelglobo.com/elite-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Sweiss</h4>
+                <a href="https://www.ferreteriaelglobo.com/sweiss-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Hilco</h4>
+                <a href="https://www.ferreteriaelglobo.com/hilco-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Pferd</h4>
+                <a href="https://www.ferreteriaelglobo.com/pferd-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Krino</h4>
+                <a href="https://www.ferreteriaelglobo.com/krino-italia/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>LTI</h4>
+                <a href="https://www.ferreteriaelglobo.com/lti-hecho-en-italia/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Sika</h4>
+                <a href="https://www.ferreteriaelglobo.com/sika-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Cuprum</h4>
+                <a href="https://www.ferreteriaelglobo.com/escaleras-cuprum/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>EZ-FLO</h4>
+                <a href="https://www.ferreteriaelglobo.com/ezflo/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Comunello</h4>
+                <a href="https://www.ferreteriaelglobo.com/comunello/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Bahco</h4>
+                <a href="https://www.ferreteriaelglobo.com/bahco/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Corona</h4>
+                <a href="https://www.ferreteriaelglobo.com/corona-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Kebel</h4>
+                <a href="https://www.ferreteriaelglobo.com/kebel-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Sky-Fort</h4>
+                <a href="https://www.ferreteriaelglobo.com/sky-fort-2/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>DeWalt</h4>
+                <a href="https://www.ferreteriaelglobo.com/dewalt/" target="_blank">VER CATÁLOGO →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Scala</h4>
+                <a href="https://www.ferreteriaelglobo.com/catalogo/escaleras/marca-escalera-scala/" target="_blank">VER PRODUCTOS →</a>
+            </div>
+
+            <div class="catalogo">
+                <h4>Louisville</h4>
+                <a href="https://www.ferreteriaelglobo.com/catalogo/escaleras/marca-escalera-louisville/" target="_blank">VER PRODUCTOS →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        FERRETERÍA EL GLOBO · TRADICIÓN FERRETERA
+    </footer>
+
+</div>
+
+</body>
+</html>
